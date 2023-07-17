@@ -2,10 +2,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0ffff;
+    transition: 0.3s ease;
 }
 
 body.dark-mode {
     background-color: #0f0f0f;
+    transition: 0.3s ease;
 }
 
 main {
@@ -23,6 +25,8 @@ main {
     border-radius: 50px;
     background-color: rgb(231, 231, 231);
     width: 100px;
+    transition: 0.5s ease;
+    
 }
 
 #mode::-webkit-slider-thumb {
@@ -32,6 +36,8 @@ main {
     height: 40px;
     background: #ffb23f url(./images/icon-sun.svg) no-repeat center;
     border-radius: 100%;
+    transition: 0.5s ease;
+
 }
 
 #mode.dark-mode {
@@ -42,6 +48,7 @@ main {
     border-radius: 50px;
     background-color: #15151d;
     width: 100px;
+    transition: 0.5s ease;
 }
 
 #mode.dark-mode::-webkit-slider-thumb {
@@ -51,4 +58,5 @@ main {
     height: 40px;
     background: #1e00b4 url(./images/icon-moon.svg) no-repeat center;
     border-radius: 100%;
+    transition: 0.5s ease;
 }
