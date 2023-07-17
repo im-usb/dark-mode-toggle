@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0ffff;
+}
+
+body.dark-mode {
+    background-color: #0f0f0f;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mode {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #f0ffff;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: rgb(231, 231, 231);
+    width: 100px;
+}
+
+#mode::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 40px;
+    height: 40px;
+    background: #ffb23f url(./images/icon-sun.svg) no-repeat center;
+    border-radius: 100%;
+}
+
+#mode.dark-mode {
+    appearance: none;
+    -webkit-appearance: none;
+    /* background-color: #f0ffff; */
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #15151d;
+    width: 100px;
+}
+
+#mode.dark-mode::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 40px;
+    height: 40px;
+    background: #1e00b4 url(./images/icon-moon.svg) no-repeat center;
+    border-radius: 100%;
+}
